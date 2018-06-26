@@ -1,0 +1,3 @@
+korisnickoIme;lozinka;ime;prezime;uloga
+omar;1234;Omar;Iriskic;menadzer
+joe;doe;John;Doe;prodavac
