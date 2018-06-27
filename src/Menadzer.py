@@ -2,7 +2,7 @@ from Podaci import *
 from Pretraga import dodavanjeZanrova
 from Pretraga import prikazFilmova
 from Pretraga import prikazZanrova
-from MenadzerPrikaz import *
+import MenadzerPrikaz
 
 
 listaProjekcija = ucitavanjeProjekcija()
@@ -11,13 +11,11 @@ listaFilmova = ucitavanjeFilmova()
 
 
 
-
-
-
 def unosProjekcije():
     print(25 * "-")
     print("     Unos projekcije     ")
     print(25 * "-")
+    print("")
     zanrovi = dodavanjeZanrova()
     IDs = []
     projekcije = ucitavanjeProjekcija()
@@ -40,9 +38,7 @@ def unosProjekcije():
 
     unosVremena = input("Unesite vrijeme projekcije u formatu (hh:mm): ")
 
-
-
-    print("Unesite ID filma, ako zelite da kreirate novi, unesite: 'da'")
+    print("Unesite ID filma. Ako zelite da kreirate novi, unesite: 'da'")
     print("")
     prikazFilmova()
     unosFilma = input()
@@ -90,7 +86,7 @@ def unosProjekcije():
                 print("")
                 print("Projekcija je kreirana")
                 print("")
-                menadzerPrikaz()
+                MenadzerPrikaz.menadzerPrikaz()
 
 
     #         kreiranje novog filma
@@ -172,8 +168,7 @@ def unosProjekcije():
             print("")
             print("Projekcija je kreirana")
             print("")
-            menadzerPrikaz()
-
+            MenadzerPrikaz.menadzerPrikaz()
 
 
 
@@ -204,4 +199,27 @@ def kreiranjeFilma(film):
 
             pisanjeFilmovi.write(str(i) +  ";")
 
-unosProjekcije()
+
+
+def dodavanjeProdavca():
+    print(25 * "-")
+    print("     Dodavanje prodavca     ")
+    print(25 * "-")
+    unosKorisnickogImena = input("Unesite korisnicko ime: ")
+    unosLozinke = input("Unesite lozinku: ")
+    unosImena = input("Unesite ime: ")
+    unosPrezime = input("Unesite prezime: ")
+    uloga = "prodavac"
+
+    korisnik = [unosKorisnickogImena, unosLozinke, unosImena, unosPrezime, uloga]
+
+    with open("korisnici.txt", "a") as korisnici:
+        korisnici.write("\n")
+        for i in korisnik:
+            korisnici.write(str(i) + ";")
+        print("")
+    print("Uspjesno ste dodali novog prodavca")
+    MenadzerPrikaz.menadzerPrikaz()
+
+
+

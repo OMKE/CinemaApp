@@ -1,13 +1,15 @@
 from Views import pretragaPrikaz
+from Menadzer import unosProjekcije
+from Menadzer import dodavanjeProdavca
 def menadzerPrikaz():
     print(22 * "-")
     print("")
     print("1. Pretraga projekcija")
-    print("2. Projekcije")
-    print("3. Unos nove projekcije")
-    print("4. Brisanje projekcije")
-    print("5. Izmjena projekcije")
-    print("6. Dodavanje prodavca")
+    print("2. Unos nove projekcije")
+    print("3. Brisanje projekcije")
+    print("4. Izmjena projekcije")
+    print("5. Dodavanje prodavca")
+    print("6. Odjava")
     print(22 * "-")
     print("Unesite broj funkcije")
     menadzerNavigacija()
@@ -16,6 +18,7 @@ def menadzerPrikaz():
 def menadzerNavigacija():
     netacanInput = True
     while netacanInput:
+
         try:
             unosFunkcije = int(input())
             netacanInput = False
@@ -28,14 +31,15 @@ def menadzerNavigacija():
             if unosFunkcije == 1:
                 pretragaPrikaz()
             elif unosFunkcije == 2:
-                print("Projekcije")
+                unosProjekcije()
             elif unosFunkcije == 3:
-                print("Unos nove projekcije")
-            elif unosFunkcije == 4:
                 print("Brisanje projekcije")
-            elif unosFunkcije == 5:
+            elif unosFunkcije == 4:
                 print("Izmjena projekcije")
+            elif unosFunkcije == 5:
+                dodavanjeProdavca()
             elif unosFunkcije == 6:
-                print("Dodavanje prodavca")
+                quit()
+
 
 
