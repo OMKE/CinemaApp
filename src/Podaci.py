@@ -3,7 +3,7 @@ sale = ["1A","2A","3A","4A","5A","1B","2B","3B","4B","1C","2C","3C"]
 
 def ucitavanjeFilmova():
     listaFilmova = []
-    with open("filmovi.txt", 'r') as filmoviFajl:
+    with open("data/filmovi.txt", 'r') as filmoviFajl:
 
         prvaLinija = True
 
@@ -29,7 +29,7 @@ def ucitavanjeFilmova():
                     zanrovi.append(zanr)
                 listaFilmova.append(film)
 
-        with open("zanrovi.txt", 'w') as zanroviFajl:
+        with open("data/zanrovi.txt", 'w') as zanroviFajl:
             for i in zanrovi:
                 for j in i:
                     zanroviFajl.write(str(j + ";"))
@@ -40,7 +40,7 @@ def ucitavanjeFilmova():
 def ucitavanjeProjekcija():
     listaProjekcija = []
 
-    with open("projekcije.txt", 'r') as projekcijeFajl:
+    with open("data/projekcije.txt", 'r') as projekcijeFajl:
 
         prvaLinija = True
 

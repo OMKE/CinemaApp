@@ -8,6 +8,6 @@ id;naziv;zanr
 7;Black Panther;Akcija/Avantura/Sci-Fi
 8;Venom;Akcija/Horror/Sci-Fi
 9;Tomb Raider;Akcija/Avantura/Sci-Fi
-10;SuperFly;Akcija/Krimi/Triler11;
+10;SuperFly;Akcija/Krimi/Triler;
 11;Race 3;Fantazija/Komedija;
 12;Tag;Komedija/Avantura;

@@ -1,24 +1,27 @@
-from  Login import loginProvjera
-from MenadzerPrikaz import  *
-from Views import prodavacNavigacija
-from Views import prodavacPrikaz
+from src.Login import loginProvjera
+from src.Login import meni
+
+
 
 
 
 def start():
-    korisnik = loginProvjera()
-
-
-    # Provjera uloge
-    if korisnik["uloga"] == "menadzer":
-        menadzerPrikaz()
-        menadzerNavigacija()
-    elif korisnik["uloga"] == "prodavac":
-        prodavacPrikaz()
-        prodavacNavigacija()
+    loginProvjera()
+    meni()
 
 
 start()
+
+
+
+
+
+
+
+
+
+
+
 
 
 

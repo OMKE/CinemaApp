@@ -1,5 +1,6 @@
 
-from Podaci import *
+from src.Podaci import *
+from src import Login
 
 listaProjekcija = ucitavanjeProjekcija()
 listaFilmova = ucitavanjeFilmova()
@@ -15,9 +16,11 @@ def pretragaPoID():
         if i["id"] == unosId:
             print("Film: " + i["film"] + "\n   Datum: " + i["datum"] + " - " + i["vrijemePocetka"] + "\n   Duzina: " + i["duzina"] + "\n   Cijena: " + i["cijena"] + "\n   Sala: " + i["sala"] + "\n   Slobodno mjesta: " + i["slobodnoMjesta"])
             nadjen = True
+            Login.redirect()
             break
     if nadjen == False:
         print("Ne postoji projekcija sa unesenim ID-jem")
+        Login.redirect()
 
 
 
@@ -41,13 +44,16 @@ def pretragaPoNazivu():
             nadjen = True
 
 
+
     if nadjen == False:
         print("Ne postoji projekcija sa unesenim nazivom")
+
+    Login.redirect()
 
 
 def dodavanjeZanrova():
     zanrovi = []
-    with open("zanrovi.txt", 'r') as zanroviFajl:
+    with open("data/zanrovi.txt", 'r') as zanroviFajl:
         for line in zanroviFajl:
             line = line.strip()
             zanroviLista = line.split(";")
@@ -86,7 +92,8 @@ def pretragaPoZanru():
                                     "sala"] + "\n   Slobodno mjesta: " +
                                 j["slobodnoMjesta"])
 
-
+    print("")
+    Login.redirect()
 
 def prikazFilmova():
     for i in listaFilmova:
@@ -111,7 +118,7 @@ def pretragaPoSali():
     unosSale.lower()
     nadjen = False
     for i in listaProjekcija:
-        if i["sala"].lower() == unosSale:
+        if i["sala"] == unosSale:
             print(
                 "Film: " + i["film"] + "\n   Datum: " + i["datum"] + " - " + i["vrijemePocetka"] + "\n   Duzina: " + i[
                     "duzina"] + "\n   Cijena: " + i["cijena"] + "\n   Sala: " + i["sala"] + "\n   Slobodno mjesta: " +
@@ -120,4 +127,6 @@ def pretragaPoSali():
     if nadjen == False:
         print("Za navedenu salu nema predstojecih filmova")
 
+    print("")
+    Login.redirect()
 

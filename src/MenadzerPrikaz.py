@@ -1,6 +1,6 @@
-from Views import pretragaPrikaz
-from Menadzer import unosProjekcije
-from Menadzer import dodavanjeProdavca
+from src.PretragaPrikaz import pretragaPrikaz
+from src.Menadzer import unosProjekcije
+from src.Menadzer import dodavanjeProdavca
 def menadzerPrikaz():
     print(22 * "-")
     print("")

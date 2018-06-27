@@ -1,9 +1,8 @@
-from Podaci import *
-from Pretraga import dodavanjeZanrova
-from Pretraga import prikazFilmova
-from Pretraga import prikazZanrova
-import MenadzerPrikaz
-
+from src.Podaci import *
+from src.Pretraga import dodavanjeZanrova
+from src.Pretraga import prikazFilmova
+from src.Pretraga import prikazZanrova
+from src import MenadzerPrikaz
 
 listaProjekcija = ucitavanjeProjekcija()
 listaFilmova = ucitavanjeFilmova()
@@ -178,7 +177,7 @@ def unosProjekcije():
 
 
 def kreiranjeProjekcije(projekcija):
-    with open("projekcije.txt", "a") as projekcije:
+    with open("data/projekcije.txt", "a") as projekcije:
         projekcije.write("\n")
         for i in projekcija:
             projekcije.write(str(i) + ";")
@@ -193,7 +192,7 @@ def provjeraDuplikata(datum, vrijeme, sala):
 
 
 def kreiranjeFilma(film):
-    with open("filmovi.txt", 'a') as pisanjeFilmovi:
+    with open("data/filmovi.txt", 'a') as pisanjeFilmovi:
         pisanjeFilmovi.write("\n")
         for i in film:
 
@@ -213,7 +212,7 @@ def dodavanjeProdavca():
 
     korisnik = [unosKorisnickogImena, unosLozinke, unosImena, unosPrezime, uloga]
 
-    with open("korisnici.txt", "a") as korisnici:
+    with open("data/korisnici.txt", "a") as korisnici:
         korisnici.write("\n")
         for i in korisnik:
             korisnici.write(str(i) + ";")

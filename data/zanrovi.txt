@@ -1,1 +1,1 @@
-Akcija;Avantura;Fantazija;Akcija;Avantura;Komedija;Akcija;Avantura;Sci-Fi;Animacija;Akcija;Avantura;Akcija;Horror;Sci-Fi;Akcija;Krimi;Triler11;Fantazija;Komedija;Komedija;Avantura;
+Akcija;Avantura;Fantazija;Akcija;Avantura;Komedija;Akcija;Avantura;Sci-Fi;Animacija;Akcija;Avantura;Akcija;Horror;Sci-Fi;Akcija;Krimi;Triler;Fantazija;Komedija;Komedija;Avantura;

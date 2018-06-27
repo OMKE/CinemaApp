@@ -1,8 +1,11 @@
+from src import MenadzerPrikaz
+from src import ProdavacPrikaz
 
+ulogovaniKorisnik = []
 
 def ucitavanjeKorisnika():
     listaKorisnika = []
-    with open("korisnici.txt",'r') as korisniciFajl:
+    with open("data/korisnici.txt",'r') as korisniciFajl:
 
         prvaLinija = True
 
@@ -45,7 +48,9 @@ def loginProvjera():
                 if i["korisnickoIme"] == unosKorisnickoIme and i["lozinka"] == unosLozinka:
                     loggedIn = True
                     logginIn = False
+                    ulogovaniKorisnik.append(i)
                     print("Dobrodosli " + i["ime"] + " - Uloga: " + i["uloga"])
+                    redirect()
                     return i
 
             if loggedIn == False:
@@ -60,6 +65,17 @@ def loginProvjera():
 
 
 
+def redirect():
+    if meni() == True:
+        MenadzerPrikaz.menadzerPrikaz()
+        MenadzerPrikaz.menadzerNavigacija()
+    else:
+        ProdavacPrikaz.prodavacPrikaz()
+        ProdavacPrikaz.prodavacNavigacija()
 
-
-
+def meni():
+    for i in ulogovaniKorisnik:
+        if i["uloga"] == "menadzer":
+            return True
+        elif i["uloga"] == "prodavac":
+            return False
