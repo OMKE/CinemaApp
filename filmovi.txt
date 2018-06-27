@@ -1,0 +1,13 @@
+id;naziv;zanr
+1;Avengers: Infinity War;Akcija/Avantura/Fantazija
+2;Deadpool 2;Akcija/Avantura/Komedija
+3;Jurassic World: Falled Kingdom;Akcija/Avantura/Sci-Fi
+4;Incredibles 2;Animacija/Akcija/Avantura
+5;Ant-Man and the Wasp;Akcija/Avantura/Sci-Fi
+6;Solo: a Star Wars Story;Akcija/Avantura/Fantazija
+7;Black Panther;Akcija/Avantura/Sci-Fi
+8;Venom;Akcija/Horror/Sci-Fi
+9;Tomb Raider;Akcija/Avantura/Sci-Fi
+10;SuperFly;Akcija/Krimi/Triler11;
+11;Race 3;Fantazija/Komedija;
+12;Tag;Komedija/Avantura;

@@ -14,7 +14,7 @@ def ucitavanjeKorisnika():
                 prvaLinija = False
             else:
                 line = line.strip()
-                korisnik = {}
+
                 korisnikPodaci = line.split(";")
 
                 korisnik = dict(zip(const, korisnikPodaci))

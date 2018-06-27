@@ -1,5 +1,8 @@
 from  Login import loginProvjera
-from Views import  *
+from MenadzerPrikaz import  *
+from Views import prodavacNavigacija
+from Views import prodavacPrikaz
+
 
 
 def start():
@@ -16,3 +19,11 @@ def start():
 
 
 start()
+
+
+
+
+
+
+
+
