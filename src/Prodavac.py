@@ -1,6 +1,8 @@
 from src.Menadzer import prikazProjekcija, saveProjekcije
 import src.ProdavacPrikaz
 import src.Login
+import datetime
+import uuid
 
 def prodajaKarti():
     print(28 * "-")
@@ -42,6 +44,8 @@ def prodajaKarti():
                     racuni.write("\nIznos: " + str(ukupno) + " RSD")
                     for j in src.Login.ulogovaniKorisnik:
                         racuni.write("\nProdavac: " + str(j["ime"] + " " + str(j["prezime"])))
+                    racuni.write("\nDatum: " + str(datetime.datetime.now()))
+                    racuni.write("\nSifra racuna: " + str(uuid.uuid1())[:8])
                     racuni.write("\n")
                     racuni.write(30 * "-")
 
