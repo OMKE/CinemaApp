@@ -12,3 +12,6 @@ id;datum;vrijemePocetka;duzina;cijena;film;sala;slobodnoMjesta;ukupnoMjesta
 11;25.05.2018;16:00;140;350;Jurassic World: Falled Kingdom;4A;180;180;
 12;03.07.2018;17:35;100;350;Tag;4B;210;210;
 13;29.07.2018;19:00;115;360;Solo: a Star Wars Story;4A;200;200;
+14;10.07.2018;16:00;130;450;Incredibles 2;3A;200;200;
+15;11.07.2018;17:00;118;350;Tomb Raider;3A;200;200;
+16;22.07.2018;19:00;130;450;Jurassic World: Falled Kingdom;3A;150;150;
