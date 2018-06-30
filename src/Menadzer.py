@@ -26,9 +26,6 @@ def unosProjekcije():
     print(25 * "-")
     print("")
     zanrovi = dodavanjeZanrova()
-    IDs = []
-    projekcije = ucitavanjeProjekcija()
-
 
 
     while True:
@@ -247,6 +244,18 @@ def prikazProjekcija():
             i["slobodnoMjesta"])
 
     print("")
+
+    return update
+
+
+
+
+def izmjenaProjekcije():
+    print(28 * "-")
+    print("     Izmjena projekcije     ")
+    print(28 * "-")
+    update = prikazProjekcija()
+
     unosId = input("Unesite ID projekcije koju zelite izmjeniti: ")
 
     sacuvan = False
@@ -290,7 +299,6 @@ def prikazProjekcija():
                                 print("Ne postoji sala sa unesenim rednim brojem, pokusajte ponovo")
                                 izabranaSala = False
 
-
                         if provjeraDuplikata(datum, unosVremena, sala):
                             print("Sala sa unesenim datumom i vremenom je zauzeta")
                             izmjenaProjekcije()
@@ -309,7 +317,6 @@ def prikazProjekcija():
                             i["ukupnoMjesta"] = unosUkupnihMjesta
                             sacuvan = True
 
-
         if nadjenFilm == False:
             print("Ne postoji film sa unesenim ID-ijem, pokusajte ponovo")
             izmjenaProjekcije()
@@ -320,7 +327,6 @@ def prikazProjekcija():
             MenadzerPrikaz.menadzerPrikaz()
 
 
-
 def saveProjekcije(projekcije):
     with open("data/projekcije.txt", 'w') as projekcijeWrite:
         projekcijeWrite.write("id;datum;vrijemePocetka;duzina;cijena;film;sala;slobodnoMjesta;ukupnoMjesta")
@@ -328,12 +334,3 @@ def saveProjekcije(projekcije):
             projekcijeWrite.write("\n")
             for j in i.values():
                 projekcijeWrite.write(str(j) + ";")
-
-
-
-def izmjenaProjekcije():
-    print(28 * "-")
-    print("     Izmjena projekcije     ")
-    print(28 * "-")
-    prikazProjekcija()
-

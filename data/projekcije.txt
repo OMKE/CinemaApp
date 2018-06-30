@@ -14,4 +14,4 @@ id;datum;vrijemePocetka;duzina;cijena;film;sala;slobodnoMjesta;ukupnoMjesta
 13;29.07.2018;19:00;115;360;Solo: a Star Wars Story;4A;200;200;
 14;10.07.2018;16:00;130;450;Incredibles 2;3A;200;200;
 15;11.07.2018;17:00;118;350;Tomb Raider;3A;200;200;
-16;25.07.2018;20:00;120;400;Jurassic World: Falled Kingdom;4B;200;200;
+16;13.07.2018;17:00;130;350;Deadpool 2;5A;200;200;
