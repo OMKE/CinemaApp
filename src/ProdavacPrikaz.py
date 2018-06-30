@@ -1,8 +1,7 @@
 from src.PretragaPrikaz import pretragaPrikaz
-
+from src.Prodavac import prodajaKarti
 def prodavacPrikaz():
     print(22 * "-")
-    print("Unesite broj funkcije")
     print("")
     print("1. Pretraga projekcija")
     print("2. Prodaja karata")
@@ -27,6 +26,6 @@ def prodavacNavigacija():
             if unosFunkcije == 1:
                 pretragaPrikaz()
             elif unosFunkcije == 2:
-                print("Prodaja karata")
+                prodajaKarti()
             elif unosFunkcije == 3:
                 quit()

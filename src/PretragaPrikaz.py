@@ -1,5 +1,5 @@
 from src.Pretraga import pretragaPoID, pretragaPoNazivu, pretragaPoZanru, pretragaPoSali
-
+import src.Login
 
 
 
@@ -12,6 +12,7 @@ def pretragaPrikaz():
     print("2. Pretraga po nazivu filma")
     print("3. Pretraga po zanru filma")
     print("4. Pretraga po sali prikazivanja")
+    print("5. Izborni meni")
     print("")
     pretragaNavigacija()
 
@@ -39,3 +40,9 @@ def pretragaNavigacija():
             elif unosBroja == 4:
                 print("Unesite redni broj sale: ")
                 pretragaPoSali()
+            elif unosBroja == 5:
+                src.Login.redirect()
+            else:
+                print("Unesite jedan od ponudjenih brojeva")
+                netacanUnos = True
+                pretragaPrikaz()
