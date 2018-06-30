@@ -44,18 +44,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Login.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Login.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1344">
-              <caret line="65" selection-start-line="65" selection-end-line="65" />
-              <folding>
-                <element signature="e#0#30#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="MenadzerPrikaz.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MenadzerPrikaz.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -89,20 +77,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="projekcije.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projekcije.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="75" lean-forward="true" selection-start-column="75" selection-end-column="75" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Menadzer.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Menadzer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1231">
-              <caret line="352" column="26" selection-start-line="352" selection-start-column="26" selection-end-line="352" selection-end-column="26" />
+            <state relative-caret-position="666">
+              <caret line="330" lean-forward="true" selection-start-line="330" selection-end-line="330" />
             </state>
           </provider>
         </entry>
@@ -166,6 +145,7 @@
         <option value="$PROJECT_DIR$/src/Main.py" />
         <option value="$PROJECT_DIR$/src/MenadzerPrikaz.py" />
         <option value="$PROJECT_DIR$/projekcije.txt" />
+        <option value="$PROJECT_DIR$/data/projekcije.txt" />
         <option value="$PROJECT_DIR$/src/Menadzer.py" />
       </list>
     </option>
@@ -375,7 +355,14 @@
       <option name="project" value="LOCAL" />
       <updated>1530387154631</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Izmjena projekcija gotova">
+      <created>1530389036316</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1530389036316</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TodoView">
@@ -391,10 +378,10 @@
     <frame x="0" y="22" width="1920" height="1125" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14802982" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14802982" />
       <window_info anchor="bottom" id="TODO" order="5" weight="0.3286004" />
       <window_info anchor="bottom" id="Event Log" order="6" side_tool="true" />
-      <window_info anchor="right" x="1920" y="85" width="960" height="1036" id="Run" order="3" type="WINDOWED" visible="true" weight="0.32916668" />
+      <window_info active="true" anchor="right" x="1920" y="85" width="960" height="1036" id="Run" order="3" type="WINDOWED" visible="true" weight="0.32916668" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.328585" />
       <window_info anchor="bottom" id="Python Console" order="8" weight="0.32150102" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -429,7 +416,8 @@
     <MESSAGE value="Login, navigacija odradjeni" />
     <MESSAGE value="updated" />
     <MESSAGE value="Izmjena projekcija, nije gotova" />
-    <option name="LAST_COMMIT_MESSAGE" value="Izmjena projekcija, nije gotova" />
+    <MESSAGE value="Izmjena projekcija gotova" />
+    <option name="LAST_COMMIT_MESSAGE" value="Izmjena projekcija gotova" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/PretragaPrikaz.py">
@@ -781,24 +769,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/projekcije.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="11" column="70" lean-forward="true" selection-start-line="11" selection-start-column="70" selection-end-line="11" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/filmovi.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projekcije.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="75" lean-forward="true" selection-start-column="75" selection-end-column="75" />
         </state>
       </provider>
     </entry>
@@ -809,10 +783,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/projekcije.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="16" column="70" lean-forward="true" selection-end-line="16" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/projekcije.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="16" column="70" selection-start-line="16" selection-start-column="70" selection-end-line="16" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Menadzer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1231">
-          <caret line="352" column="26" selection-start-line="352" selection-start-column="26" selection-end-line="352" selection-end-column="26" />
+        <state relative-caret-position="666">
+          <caret line="330" lean-forward="true" selection-start-line="330" selection-end-line="330" />
         </state>
       </provider>
     </entry>

@@ -331,30 +331,6 @@ def saveProjekcije(projekcije):
 
 
 
-
-def azuriraj():
-    listaProjekcija = []
-
-    with open("data/projekcije.txt", 'r') as projekcijeFajl:
-
-        prvaLinija = True
-
-        for line in projekcijeFajl:
-            line = line.strip()
-            if prvaLinija:
-                const = line.split(";")
-                prvaLinija = False
-            else:
-
-                oProjekciji = line.split(";")
-
-                projekcija = dict(zip(const, oProjekciji))
-
-                listaProjekcija.append(projekcija)
-
-    return listaProjekcija
-
-
 def izmjenaProjekcije():
     print(28 * "-")
     print("     Izmjena projekcije     ")
