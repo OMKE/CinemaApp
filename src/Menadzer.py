@@ -276,22 +276,20 @@ def prikazProjekcija():
                         print("- Dostupne sale -")
 
                         counter = 0
-                        for i in sale:
+                        for k in sale:
                             counter += 1
-                            print(str(counter) + ". " + str(i))
+                            print(str(counter) + ". " + str(k))
                         izabranaSala = False
                         while izabranaSala == False:
-                            try:
-                                redniBrojSale = int(input()) - 1
-                                if redniBrojSale >= 0 and redniBrojSale <= len(sale):
-                                    sala = sale[redniBrojSale]
+                            redniBrojSale = int(input()) - 1
+                            if redniBrojSale >= 0 and redniBrojSale <= len(sale):
+                                sala = sale[redniBrojSale]
 
-                                    izabranaSala = True
-                                else:
-                                    print("Ne postoji sala sa unesenim rednim brojem, pokusajte ponovo")
-                                    izabranaSala = False
-                            except ValueError:
-                                print(ValueError)
+                                izabranaSala = True
+                            else:
+                                print("Ne postoji sala sa unesenim rednim brojem, pokusajte ponovo")
+                                izabranaSala = False
+
 
                         if provjeraDuplikata(datum, unosVremena, sala):
                             print("Sala sa unesenim datumom i vremenom je zauzeta")
@@ -311,13 +309,50 @@ def prikazProjekcija():
                             i["ukupnoMjesta"] = unosUkupnihMjesta
                             sacuvan = True
 
+
         if nadjenFilm == False:
             print("Ne postoji film sa unesenim ID-ijem, pokusajte ponovo")
             izmjenaProjekcije()
 
         if sacuvan:
+            saveProjekcije(update)
             print("Projekcija je uspjesno izmjenjena")
+            MenadzerPrikaz.menadzerPrikaz()
 
+
+
+def saveProjekcije(projekcije):
+    with open("data/projekcije.txt", 'w') as projekcijeWrite:
+        projekcijeWrite.write("id;datum;vrijemePocetka;duzina;cijena;film;sala;slobodnoMjesta;ukupnoMjesta")
+        for i in projekcije:
+            projekcijeWrite.write("\n")
+            for j in i.values():
+                projekcijeWrite.write(str(j) + ";")
+
+
+
+
+def azuriraj():
+    listaProjekcija = []
+
+    with open("data/projekcije.txt", 'r') as projekcijeFajl:
+
+        prvaLinija = True
+
+        for line in projekcijeFajl:
+            line = line.strip()
+            if prvaLinija:
+                const = line.split(";")
+                prvaLinija = False
+            else:
+
+                oProjekciji = line.split(";")
+
+                projekcija = dict(zip(const, oProjekciji))
+
+                listaProjekcija.append(projekcija)
+
+    return listaProjekcija
 
 
 def izmjenaProjekcije():
