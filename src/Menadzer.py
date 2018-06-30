@@ -235,7 +235,7 @@ def dodavanjeProdavca():
 
 
 def prikazProjekcija():
-    update = ucitavanjeProjekcija()
+    update = azuriraj()
 
     for i in update:
         print(
@@ -322,9 +322,34 @@ def izmjenaProjekcije():
             izmjenaProjekcije()
 
         if sacuvan:
+            print("Projekcije izgledaju ovako: ")
+            print("")
             saveProjekcije(update)
             print("Projekcija je uspjesno izmjenjena")
             MenadzerPrikaz.menadzerPrikaz()
+
+
+def azuriraj():
+    listaProjekcija = []
+
+    with open("data/projekcije.txt", 'r') as projekcijeFajl:
+
+        prvaLinija = True
+
+        for line in projekcijeFajl:
+            line = line.strip()
+            if prvaLinija:
+                const = line.split(";")
+                prvaLinija = False
+            else:
+
+                oProjekciji = line.split(";")
+
+                projekcija = dict(zip(const, oProjekciji))
+
+                listaProjekcija.append(projekcija)
+
+    return listaProjekcija
 
 
 def saveProjekcije(projekcije):
@@ -334,3 +359,56 @@ def saveProjekcije(projekcije):
             projekcijeWrite.write("\n")
             for j in i.values():
                 projekcijeWrite.write(str(j) + ";")
+
+
+def brisanjeProjekcija():
+    print(28 * "-")
+    print("     Brisanje projekcije     ")
+    print(28 * "-")
+
+    counter = 0
+    projekcije = azuriraj()
+
+    for j in projekcije:
+        counter += 1
+        print(
+            str(counter) + " - Film: " + j["film"] + "\n   Datum: " + j["datum"] + " - " + j[
+                "vrijemePocetka"] + "   Duzina: " + j[
+                "duzina"] + "   Cijena: " + j["cijena"] + "   Sala: " + j["sala"] + "   Slobodno mjesta: " +
+            j["slobodnoMjesta"])
+
+
+    print("")
+
+
+    unosID = int(input("Unesite ID projekcije koju zelite obrisati: "))
+    nadjen = False
+    counter = 0
+    for i in projekcije:
+        counter += 1
+        if counter == unosID:
+            print("Izabrali ste projekciju: " + i["film"] + " - Datum: " + i["datum"] + " - Vrijeme pocetka: " + i["vrijemePocetka"] + " - Sala: " + i["sala"])
+
+            potvrda = input("Brisanje (da/ne): ")
+            if potvrda == "da":
+                projekcije.pop(unosID - 1)
+                print("")
+                saveProjekcije(projekcije)
+                print("Projekcija je uspjesno obrisana")
+                MenadzerPrikaz.menadzerPrikaz()
+                nadjen = True
+            elif potvrda == "ne":
+                MenadzerPrikaz.menadzerPrikaz()
+            else:
+                MenadzerPrikaz.menadzerPrikaz()
+
+
+    if nadjen == False:
+        print("")
+        print("Projekcija sa unesenim ID-jem ne postoji")
+        brisanjeProjekcija()
+
+
+
+
+

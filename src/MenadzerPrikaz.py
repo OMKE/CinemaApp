@@ -2,6 +2,7 @@ from src.PretragaPrikaz import pretragaPrikaz
 from src.Menadzer import unosProjekcije
 from src.Menadzer import dodavanjeProdavca
 from src.Menadzer import izmjenaProjekcije
+from src.Menadzer import brisanjeProjekcija
 def menadzerPrikaz():
     print(22 * "-")
     print("")
@@ -34,7 +35,7 @@ def menadzerNavigacija():
             elif unosFunkcije == 2:
                 unosProjekcije()
             elif unosFunkcije == 3:
-                print("Brisanje projekcije")
+                brisanjeProjekcija()
             elif unosFunkcije == 4:
                 izmjenaProjekcije()
             elif unosFunkcije == 5:

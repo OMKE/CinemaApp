@@ -1,17 +1,13 @@
 id;datum;vrijemePocetka;duzina;cijena;film;sala;slobodnoMjesta;ukupnoMjesta
 1;01.07.2018;16:00;128;350;Avengers: Infinity War;5A;150;150;
 2;01.07.2018;17:00;135;350;Deadpool 2;4A;200;200;
-3;01.07.2018;19:00;120;350;Incredibles 2;3B;210;210;
 4;01.07.2018;20:00;140;400;Tomb Raider;2B;150;150;
 5;02.07.2018;16:00;138;350;Jurassic World: Falled Kingdom;5A;150;150;
 6;02.07.2018;16:00;120;350;Incredibles 2;2B;150;150;
-7;02.07.2018;19:00;128;350;Black Panther;4A;200;200;
 8;02.07.2018;19:00;115;400;Ant-Man and the Wasp;3B;210;210;
 9;02.07.2018;22:00;135;350;SuperFly;1B;170;170;
 10;02.07.2018;20:00;135;350;Deadpool 2;4A;200;200;
 11;25.05.2018;16:00;140;350;Jurassic World: Falled Kingdom;4A;180;180;
-12;03.07.2018;17:35;100;350;Tag;4B;210;210;
 13;29.07.2018;19:00;115;360;Solo: a Star Wars Story;4A;200;200;
 14;10.07.2018;16:00;130;450;Incredibles 2;3A;200;200;
 15;11.07.2018;17:00;118;350;Tomb Raider;3A;200;200;
-16;13.07.2018;17:00;130;350;Deadpool 2;5A;200;200;
