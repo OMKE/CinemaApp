@@ -1,0 +1,13 @@
+
+------------------------------
+            Racun  
+Projekcija Avengers: Infinity War
+    - Datum: 01.07.2018
+    - Vrijeme pocetka: 16:00
+    - Sala: 5A
+Broj karata: 3
+Iznos: 1050 RSD
+Prodavac: Joe Doe
+Datum: 2018-07-01 00:26:15.747695
+Sifra racuna: 9a2e3ac8
+------------------------------
