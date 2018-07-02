@@ -1,6 +1,6 @@
-import Podaci as Podaci
-import Login as Login
-import Menadzer as Menadzer
+import Podaci
+import Login
+import Menadzer
 
 
 def pretragaPoID():

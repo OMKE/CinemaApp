@@ -1,6 +1,6 @@
 import Podaci as Podaci
-import MenadzerPrikaz as MenadzerPrikaz
-import Pretraga as Pretraga
+import MenadzerPrikaz
+import Pretraga
 
 
 

@@ -1,7 +1,7 @@
 id;datum;vrijemePocetka;duzina;cijena;film;sala;slobodnoMjesta;ukupnoMjesta
 1;01.07.2018;16:00;128;350;Avengers: Infinity War;5A;147;150;
 2;01.07.2018;17:00;135;350;Deadpool 2;4A;200;200;
-3;01.07.2018;19:00;120;350;Incredibles 2;3B;203;210;
+3;01.07.2018;19:00;120;350;Incredibles 2;3B;198;210;
 4;01.07.2018;20:00;140;400;Tomb Raider;2B;135;150;
 5;02.07.2018;16:00;138;350;Jurassic World: Falled Kingdom;5A;145;150;
 6;02.07.2018;16:00;120;350;Incredibles 2;2B;140;150;

@@ -1,4 +1,4 @@
-import PretragaPrikaz as PretragaPrikaz
+import PretragaPrikaz
 import Prodavac as Prodavac
 def prodavacPrikaz():
     print(22 * "-")

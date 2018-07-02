@@ -1,5 +1,5 @@
-import MenadzerPrikaz as MenadzerPrikaz
-import ProdavacPrikaz as ProdavacPrikaz
+import MenadzerPrikaz
+import ProdavacPrikaz
 
 ulogovaniKorisnik = []
 

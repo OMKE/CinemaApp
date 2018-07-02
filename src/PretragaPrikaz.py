@@ -1,5 +1,5 @@
 import Login
-import Pretraga as Pretraga
+import Pretraga
 
 
 def pretragaPrikaz():
