@@ -9,9 +9,7 @@ id;datum;vrijemePocetka;duzina;cijena;film;sala;slobodnoMjesta;ukupnoMjesta
 8;02.07.2018;19:00;115;400;Ant-Man and the Wasp;3B;186;210;
 9;02.07.2018;22:00;135;350;SuperFly;1B;167;170;
 10;02.07.2018;20:00;135;350;Deadpool 2;4A;186;200;
-11;25.05.2018;16:00;140;350;Jurassic World: Falled Kingdom;4A;162;180;
+11;25.05.2018;16:00;140;350;Jurassic World: Falled Kingdom;4A;157;180;
 12;03.07.2018;17:35;100;350;Tag;4B;207;210;
 13;29.07.2018;19:00;115;360;Solo: a Star Wars Story;4A;194;200;
 14;10.07.2018;16:00;130;450;Incredibles 2;3A;198;200;
-15;11.07.2018;17:00;118;350;Tomb Raider;3A;200;200;
-16;23.07.2018;21:00;128;400;Jurassic World: Falled Kingdom;2B;150;200;

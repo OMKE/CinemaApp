@@ -11,3 +11,15 @@ Prodavac: Joe Doe
 Datum: 2018-07-01 00:26:15.747695
 Sifra racuna: 9a2e3ac8
 ------------------------------
+------------------------------
+            Racun  
+Projekcija Jurassic World: Falled Kingdom
+    - Datum: 25.05.2018
+    - Vrijeme pocetka: 16:00
+    - Sala: 4A
+Broj karata: 5
+Iznos: 1750 RSD
+Prodavac: Joe Doe
+Datum: 2018-07-02 21:59:53.590464
+Sifra racuna: 7c6f2b80
+------------------------------

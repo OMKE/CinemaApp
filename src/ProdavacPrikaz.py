@@ -1,5 +1,5 @@
-from src.PretragaPrikaz import pretragaPrikaz
-from src.Prodavac import prodajaKarti
+import src.PretragaPrikaz as PretragaPrikaz
+import src.Prodavac as Prodavac
 def prodavacPrikaz():
     print(22 * "-")
     print("")
@@ -24,8 +24,8 @@ def prodavacNavigacija():
 
         if netacanInput == False:
             if unosFunkcije == 1:
-                pretragaPrikaz()
+                PretragaPrikaz.pretragaPrikaz()
             elif unosFunkcije == 2:
-                prodajaKarti()
+                Prodavac.prodajaKarti()
             elif unosFunkcije == 3:
                 quit()

@@ -29,6 +29,7 @@ def ucitavanjeFilmova():
                     zanrovi.append(zanr)
                 listaFilmova.append(film)
 
+
         with open("data/zanrovi.txt", 'w') as zanroviFajl:
             for i in zanrovi:
                 for j in i:

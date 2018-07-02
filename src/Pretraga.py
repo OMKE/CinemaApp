@@ -1,13 +1,10 @@
-
-from src.Podaci import *
-from src import Login
-
-listaProjekcija = ucitavanjeProjekcija()
-listaFilmova = ucitavanjeFilmova()
+import src.Podaci as Podaci
+import src.Login as Login
+import src.Menadzer as Menadzer
 
 
 def pretragaPoID():
-
+    listaProjekcija = Menadzer.azuriraj()
 
     unosId = input()
 
@@ -26,7 +23,7 @@ def pretragaPoID():
 
 
 def pretragaPoNazivu():
-
+    listaProjekcija = Menadzer.azuriraj()
     unosNaziva = input().lower()
 
 
@@ -64,6 +61,8 @@ def dodavanjeZanrova():
     return zanrovi
 
 def pretragaPoZanru():
+    listaProjekcija = Menadzer.azuriraj()
+    listaFilmova = Menadzer.azurirajFilmove()
     prikazZanrova()
     zanrovi = dodavanjeZanrova()
 
@@ -96,8 +95,9 @@ def pretragaPoZanru():
     Login.redirect()
 
 def prikazFilmova():
+    listaFilmova = Menadzer.azurirajFilmove()
     for i in listaFilmova:
-        print("ID: " + i["id"] + " - "+ i["naziv"] + " - Zanr: " + " ".join(i["zanr"]))
+        print("ID: " + i["id"] + " - "+ i["naziv"] + " - Zanr: " + ", ".join(i["zanr"]))
 
 def prikazZanrova():
     counter = 0
@@ -109,6 +109,8 @@ def prikazZanrova():
 
 def pretragaPoSali():
     print("- Dostupne sale -")
+    listaProjekcija = Menadzer.azuriraj()
+    sale = Podaci.sale
     for i in sale:
         print(i + ", ", end="")
 

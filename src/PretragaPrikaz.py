@@ -1,6 +1,5 @@
-from src.Pretraga import pretragaPoID, pretragaPoNazivu, pretragaPoZanru, pretragaPoSali
 import src.Login
-
+import src.Pretraga as Pretraga
 
 
 def pretragaPrikaz():
@@ -30,16 +29,16 @@ def pretragaNavigacija():
         if netacanUnos == False:
             if unosBroja == 1:
                 print("Unesite ID projekcije: ")
-                pretragaPoID()
+                Pretraga.pretragaPoID()
             elif unosBroja == 2:
                 print("Unesite naziv filma: ")
-                pretragaPoNazivu()
+                Pretraga.pretragaPoNazivu()
             elif unosBroja == 3:
                 print("Unesite redni broj zanra filma: ")
-                pretragaPoZanru()
+                Pretraga.pretragaPoZanru()
             elif unosBroja == 4:
                 print("Unesite redni broj sale: ")
-                pretragaPoSali()
+                Pretraga.pretragaPoSali()
             elif unosBroja == 5:
                 src.Login.redirect()
             else:

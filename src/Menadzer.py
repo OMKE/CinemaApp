@@ -1,11 +1,11 @@
-from src.Podaci import *
-from src.Pretraga import dodavanjeZanrova
-from src.Pretraga import prikazFilmova
-from src.Pretraga import prikazZanrova
-from src import MenadzerPrikaz
+import src.Podaci as Podaci
+import src.MenadzerPrikaz as MenadzerPrikaz
+import src.Pretraga as Pretraga
 
-listaProjekcija = ucitavanjeProjekcija()
-listaFilmova = ucitavanjeFilmova()
+
+
+listaProjekcija = Podaci.ucitavanjeProjekcija()
+listaFilmova = Podaci.ucitavanjeFilmova()
 
 
 def prepraviDatum(unosDatuma):
@@ -21,11 +21,13 @@ def prepraviDatum(unosDatuma):
     return prepravljenDatum
 
 def unosProjekcije():
+    global listaFilmova
+    global listaProjekcija
     print(25 * "-")
     print("     Unos projekcije     ")
     print(25 * "-")
     print("")
-    zanrovi = dodavanjeZanrova()
+    zanrovi = Pretraga.dodavanjeZanrova()
 
 
     while True:
@@ -52,7 +54,7 @@ def unosProjekcije():
 
     print("Unesite ID filma. Ako zelite da kreirate novi, unesite: 'da'")
     print("")
-    prikazFilmova()
+    Pretraga.prikazFilmova()
     unosFilma = input()
 
     nadjen = False
@@ -61,17 +63,31 @@ def unosProjekcije():
         if unosFilma == i["id"]:
             print("Izabrali ste film: " + i["naziv"])
             film = i["naziv"]
-            unosDuzine = input("Unesite duzinu projekcije u minutama: ")
-            unosCijene = input("Unesite cijenu u dinarima: ")
+            while True:
+                try:
+                    unosDuzine = int(input("Unesite duzinu projekcije u minutama: "))
+                    break
+                except ValueError:
+                    print("Unos strigova nije dozvoljen")
+
+            while True:
+                try:
+                    unosCijene = int(input("Unesite cijenu u dinarima: "))
+                    break
+                except ValueError:
+                    print("Unos stringova nije dozvoljen")
+
+
 
             print("Unesite redni broj sale: ")
             print("- Dostupne sale -")
-
+            sale = Podaci.sale
             counter = 0
             for i in sale:
                 counter += 1
                 print(str(counter) + ". " + str(i))
             izabranaSala = False
+            sala = ""
             while izabranaSala == False:
                 try:
                     redniBrojSale = int(input()) - 1
@@ -91,8 +107,19 @@ def unosProjekcije():
                 unosProjekcije()
             else:
 
-                unosUkupnoMjesta = input("Unesite broj ukupnih mjesta: ")
-                unosSlobodnihMjesta = input("Unesite broj slobodnih mjesta: ")
+                while True:
+                    try:
+                        unosUkupnoMjesta = int(input("Unesite broj ukupnih mjesta: "))
+                        break
+                    except ValueError:
+                        print("Unos stringova nije dozvoljen")
+                while True:
+                    try:
+                        unosSlobodnihMjesta = int(input("Unesite broj slobodnih mjesta: "))
+                        break
+                    except ValueError:
+                        print("Unos stringova nije dozvoljen")
+
                 novaProjekcija = [unosId, datum, unosVremena, unosDuzine, unosCijene, film,sala, unosSlobodnihMjesta, unosUkupnoMjesta]
                 kreiranjeProjekcije(novaProjekcija)
                 print("")
@@ -109,7 +136,7 @@ def unosProjekcije():
 
         netacanUnos = True
         while netacanUnos:
-            prikazZanrova()
+            Pretraga.prikazZanrova()
             print("Unesite redni broj zanra filma: ")
 
             try:
@@ -125,7 +152,7 @@ def unosProjekcije():
 
         if netacanUnos == False:
             print("Unesite jos jedan zanr: ")
-            prikazZanrova()
+            Pretraga.prikazZanrova()
 
             netacanUnos = True
             while netacanUnos:
@@ -143,6 +170,7 @@ def unosProjekcije():
 
         noviFilm = [idFilma, unosNaziva,izabraniZanr1+ "/" + izabraniZanr2]
         kreiranjeFilma(noviFilm)
+        listaFilmova = azurirajFilmove()
         unosDuzine = input("Unesite duzinu projekcije u minutama: ")
         unosCijene = input("Unesite cijenu u dinarima: ")
 
@@ -173,10 +201,22 @@ def unosProjekcije():
             unosProjekcije()
         else:
 
-            unosUkupnoMjesta = input("Unesite broj ukupnih mjesta: ")
-            unosSlobodnihMjesta = input("Unesite broj slobodnih mjesta: ")
+            while True:
+                try:
+                    unosUkupnoMjesta = int(input("Unesite broj ukupnih mjesta: "))
+                    break
+                except ValueError:
+                    print("Unos stringova nije dozvoljen")
+            while True:
+                try:
+                    unosSlobodnihMjesta = int(input("Unesite broj slobodnih mjesta: "))
+                    break
+                except ValueError:
+                    print("Unos stringova nije dozvoljen")
+
             novaProjekcija = [unosId, datum, unosVremena, unosDuzine, unosCijene, unosNaziva, sala, unosSlobodnihMjesta, unosUkupnoMjesta]
             kreiranjeProjekcije(novaProjekcija)
+            listaProjekcija = azuriraj()
             print("")
             print("Projekcija je kreirana")
             print("")
@@ -197,11 +237,14 @@ def kreiranjeProjekcije(projekcija):
 
 
 def provjeraDuplikata(datum, vrijeme, sala):
+    duplikat = False
     for i in listaProjekcija:
         if i["datum"] == datum and i["vrijemePocetka"] == vrijeme and i["sala"] == sala:
-            return True
-        else:
-            return False
+            duplikat = True
+    if duplikat == True:
+        return True
+    else:
+        return False
 
 
 def kreiranjeFilma(film):
@@ -251,6 +294,7 @@ def prikazProjekcija():
 
 
 def izmjenaProjekcije():
+    global listaProjekcija
     print(28 * "-")
     print("     Izmjena projekcije     ")
     print(28 * "-")
@@ -267,11 +311,23 @@ def izmjenaProjekcije():
                 print("Izabrali ste projekciju: " + i["film"])
                 unosDatuma = input("Unesite datum projekcije u formatu (dd.mm.yyyy): ")
                 unosVremena = input("Unesite vrijeme projekcije u formatu (hh:mm): ")
-                unosDuzine = input("Unesite duzinu projekcije u minutama: ")
-                unosCijene = input("Unesite cijenu projekcije u dinarima: ")
+                while True:
+                    try:
+                        unosDuzine = int(input("Unesite duzinu projekcije u minutama: "))
+                        break
+                    except ValueError:
+                        print("Unos stringova nije dozvoljen")
+                while True:
+                    try:
+                        unosCijene = int(input("Unesite cijenu projekcije u dinarima: "))
+                        break
+                    except ValueError:
+                        print("Unos stringova nije dozvoljen")
+
+
                 datum = prepraviDatum(unosDatuma)
                 print("")
-                prikazFilmova()
+                Pretraga.prikazFilmova()
                 print("")
                 print("Unesite ID filma. ")
                 unosFilma = input()
@@ -283,7 +339,7 @@ def izmjenaProjekcije():
 
                         print("Unesite redni broj sale: ")
                         print("- Dostupne sale -")
-
+                        sale = Podaci.sale
                         counter = 0
                         for k in sale:
                             counter += 1
@@ -325,9 +381,45 @@ def izmjenaProjekcije():
             print("Projekcije izgledaju ovako: ")
             print("")
             saveProjekcije(update)
+            listaProjekcija = azuriraj()
             print("Projekcija je uspjesno izmjenjena")
             MenadzerPrikaz.menadzerPrikaz()
 
+
+def azurirajFilmove():
+    zanrovi = Podaci.zanrovi
+    listaFilmova = []
+    with open("data/filmovi.txt", 'r') as filmoviFajl:
+
+        prvaLinija = True
+
+        for line in filmoviFajl:
+            line = line.strip()
+            if prvaLinija:
+
+                const = line.split(";")
+                prvaLinija = False
+            else:
+
+                oFilmu = line.split(";")
+                try:
+                    zanr = oFilmu[2].split("/")
+                except IndexError:
+                    pass
+
+                film = dict(zip(const, oFilmu))
+                film["zanr"] = zanr
+
+                if zanr not in zanrovi:
+                    zanrovi.append(zanr)
+                listaFilmova.append(film)
+
+        with open("data/zanrovi.txt", 'w') as zanroviFajl:
+            for i in zanrovi:
+                for j in i:
+                    zanroviFajl.write(str(j + ";"))
+
+    return listaFilmova
 
 def azuriraj():
     listaProjekcija = []
@@ -362,6 +454,7 @@ def saveProjekcije(projekcije):
 
 
 def brisanjeProjekcija():
+    global listaProjekcija
     print(28 * "-")
     print("     Brisanje projekcije     ")
     print(28 * "-")
@@ -372,7 +465,7 @@ def brisanjeProjekcija():
     for j in projekcije:
         counter += 1
         print(
-            str(counter) + " - Film: " + j["film"] + "\n   Datum: " + j["datum"] + " - " + j[
+            str(counter) + " - ID: " + j["id"] + ", Film: " + j["film"] + "\n   Datum: " + j["datum"] + " - " + j[
                 "vrijemePocetka"] + "   Duzina: " + j[
                 "duzina"] + "   Cijena: " + j["cijena"] + "   Sala: " + j["sala"] + "   Slobodno mjesta: " +
             j["slobodnoMjesta"])
@@ -381,7 +474,12 @@ def brisanjeProjekcija():
     print("")
 
 
-    unosID = int(input("Unesite ID projekcije koju zelite obrisati: "))
+    while True:
+        try:
+            unosID = int(input("Unesite redni broj projekcije koju zelite obrisati: "))
+            break
+        except ValueError:
+            print("Unos stringova nije dozvoljen")
     nadjen = False
     counter = 0
     for i in projekcije:
@@ -390,10 +488,12 @@ def brisanjeProjekcija():
             print("Izabrali ste projekciju: " + i["film"] + " - Datum: " + i["datum"] + " - Vrijeme pocetka: " + i["vrijemePocetka"] + " - Sala: " + i["sala"])
 
             potvrda = input("Brisanje (da/ne): ")
-            if potvrda == "da":
+            if potvrda.lower() == "da":
+                i["logickiObrisana"] = True
                 projekcije.pop(unosID - 1)
                 print("")
                 saveProjekcije(projekcije)
+                listaProjekcija = azuriraj()
                 print("Projekcija je uspjesno obrisana")
                 MenadzerPrikaz.menadzerPrikaz()
                 nadjen = True

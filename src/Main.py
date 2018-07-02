@@ -1,13 +1,13 @@
-from src.Login import loginProvjera
-from src.Login import meni
+import src.Login as Login
+
 
 
 
 
 
 def start():
-    loginProvjera()
-    meni()
+    Login.loginProvjera()
+    Login.meni()
 
 
 start()

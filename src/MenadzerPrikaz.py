@@ -1,8 +1,7 @@
-from src.PretragaPrikaz import pretragaPrikaz
-from src.Menadzer import unosProjekcije
-from src.Menadzer import dodavanjeProdavca
-from src.Menadzer import izmjenaProjekcije
-from src.Menadzer import brisanjeProjekcija
+import src.PretragaPrikaz as PretragaPrikaz
+import src.Menadzer as Menadzer
+
+
 def menadzerPrikaz():
     print(22 * "-")
     print("")
@@ -31,15 +30,15 @@ def menadzerNavigacija():
 
         if netacanInput == False:
             if unosFunkcije == 1:
-                pretragaPrikaz()
+                PretragaPrikaz.pretragaPrikaz()
             elif unosFunkcije == 2:
-                unosProjekcije()
+                Menadzer.unosProjekcije()
             elif unosFunkcije == 3:
-                brisanjeProjekcija()
+                Menadzer.brisanjeProjekcija()
             elif unosFunkcije == 4:
-                izmjenaProjekcije()
+                Menadzer.izmjenaProjekcije()
             elif unosFunkcije == 5:
-                dodavanjeProdavca()
+                Menadzer.dodavanjeProdavca()
             elif unosFunkcije == 6:
                 quit()
 

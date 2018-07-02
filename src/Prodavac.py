@@ -1,6 +1,6 @@
-from src.Menadzer import prikazProjekcija, saveProjekcije
-import src.ProdavacPrikaz
-import src.Login
+import src.Menadzer as Menadzer
+import src.ProdavacPrikaz as ProdavacPrikaz
+import src.Login as Login
 import datetime
 import uuid
 
@@ -10,7 +10,7 @@ def prodajaKarti():
     print(28 * "-")
 
 
-    projekcije = prikazProjekcija()
+    projekcije = Menadzer.prikazProjekcija()
 
     nadjen = False
     unosId = input("Unesite ID projekcije: ")
@@ -42,20 +42,20 @@ def prodajaKarti():
                 "vrijemePocetka"]) + "\n    - Sala: " + str(i["sala"]))
                     racuni.write("\nBroj karata: " + str(unosBroja))
                     racuni.write("\nIznos: " + str(ukupno) + " RSD")
-                    for j in src.Login.ulogovaniKorisnik:
+                    for j in Login.ulogovaniKorisnik:
                         racuni.write("\nProdavac: " + str(j["ime"] + " " + str(j["prezime"])))
                     racuni.write("\nDatum: " + str(datetime.datetime.now()))
                     racuni.write("\nSifra racuna: " + str(uuid.uuid1())[:8])
                     racuni.write("\n")
                     racuni.write(30 * "-")
 
-    saveProjekcije(projekcije)
+    Menadzer.saveProjekcije(projekcije)
 
     if nadjen == False:
         print("Ne postoji projekcija sa unesenim ID-jem")
-        src.ProdavacPrikaz.prodavacPrikaz()
+        ProdavacPrikaz.prodavacPrikaz()
 
-    src.ProdavacPrikaz.prodavacPrikaz()
+    ProdavacPrikaz.prodavacPrikaz()
 
 
 
