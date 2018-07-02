@@ -1,5 +1,5 @@
-import src.PretragaPrikaz as PretragaPrikaz
-import src.Menadzer as Menadzer
+import PretragaPrikaz as PretragaPrikaz
+import Menadzer as Menadzer
 
 
 def menadzerPrikaz():

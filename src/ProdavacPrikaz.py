@@ -1,5 +1,5 @@
-import src.PretragaPrikaz as PretragaPrikaz
-import src.Prodavac as Prodavac
+import PretragaPrikaz as PretragaPrikaz
+import Prodavac as Prodavac
 def prodavacPrikaz():
     print(22 * "-")
     print("")

@@ -8,5 +8,19 @@
         </list>
       </option>
     </inspection_tool>
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="Login" />
+          <option value="MenadzerPrikaz" />
+          <option value="ProdavacPrikaz" />
+          <option value="Pretraga" />
+          <option value="Prodavac" />
+          <option value="PretragaPrikaz" />
+          <option value="Menadzer" />
+          <option value="Podaci" />
+        </list>
+      </option>
+    </inspection_tool>
   </profile>
 </component>

@@ -1,6 +1,6 @@
-import src.Podaci as Podaci
-import src.MenadzerPrikaz as MenadzerPrikaz
-import src.Pretraga as Pretraga
+import Podaci as Podaci
+import MenadzerPrikaz as MenadzerPrikaz
+import Pretraga as Pretraga
 
 
 
@@ -19,6 +19,19 @@ def prepraviDatum(unosDatuma):
     prepravljenDatum = "".join(noviDatumLista)
 
     return prepravljenDatum
+def prepraviVrijeme(vrijeme):
+    novoVrijemeLista = []
+    for i in vrijeme:
+
+        if i == "/" or i == "." or i == "*":
+            novoVrijemeLista.append(":")
+        else:
+            novoVrijemeLista.append(i)
+    prepravljenoVrijeme = "".join(novoVrijemeLista)
+
+    return prepravljenoVrijeme
+
+
 
 def unosProjekcije():
     global listaFilmova
@@ -50,7 +63,8 @@ def unosProjekcije():
     datum = prepraviDatum(unosDatuma)
 
 
-    unosVremena = input("Unesite vrijeme projekcije u formatu (hh:mm): ")
+    unosVremena1 = input("Unesite vrijeme projekcije u formatu (hh:mm): ")
+    unosVremena = prepraviVrijeme(unosVremena1)
 
     print("Unesite ID filma. Ako zelite da kreirate novi, unesite: 'da'")
     print("")
@@ -178,6 +192,7 @@ def unosProjekcije():
         print("- Dostupne sale -")
 
         counter = 0
+        sale = Podaci.sale
         for i in sale:
             counter += 1
             print(str(counter) + ". " + str(i))
@@ -230,7 +245,7 @@ def unosProjekcije():
 
 
 def kreiranjeProjekcije(projekcija):
-    with open("data/projekcije.txt", "a") as projekcije:
+    with open("./data/projekcije.txt", "a") as projekcije:
         projekcije.write("\n")
         for i in projekcija:
             projekcije.write(str(i) + ";")
@@ -248,7 +263,7 @@ def provjeraDuplikata(datum, vrijeme, sala):
 
 
 def kreiranjeFilma(film):
-    with open("data/filmovi.txt", 'a') as pisanjeFilmovi:
+    with open("./data/filmovi.txt", 'a') as pisanjeFilmovi:
         pisanjeFilmovi.write("\n")
         for i in film:
 
@@ -268,7 +283,7 @@ def dodavanjeProdavca():
 
     korisnik = [unosKorisnickogImena, unosLozinke, unosImena, unosPrezime, uloga]
 
-    with open("data/korisnici.txt", "a") as korisnici:
+    with open("./data/korisnici.txt", "a") as korisnici:
         korisnici.write("\n")
         for i in korisnik:
             korisnici.write(str(i) + ";")
@@ -310,7 +325,8 @@ def izmjenaProjekcije():
             if unosId == i["id"]:
                 print("Izabrali ste projekciju: " + i["film"])
                 unosDatuma = input("Unesite datum projekcije u formatu (dd.mm.yyyy): ")
-                unosVremena = input("Unesite vrijeme projekcije u formatu (hh:mm): ")
+                unosVremena1 = input("Unesite vrijeme projekcije u formatu (hh:mm): ")
+                unosVremena = prepraviVrijeme(unosVremena1)
                 while True:
                     try:
                         unosDuzine = int(input("Unesite duzinu projekcije u minutama: "))
@@ -389,7 +405,7 @@ def izmjenaProjekcije():
 def azurirajFilmove():
     zanrovi = Podaci.zanrovi
     listaFilmova = []
-    with open("data/filmovi.txt", 'r') as filmoviFajl:
+    with open("./data/filmovi.txt", 'r') as filmoviFajl:
 
         prvaLinija = True
 
@@ -414,7 +430,7 @@ def azurirajFilmove():
                     zanrovi.append(zanr)
                 listaFilmova.append(film)
 
-        with open("data/zanrovi.txt", 'w') as zanroviFajl:
+        with open("./data/zanrovi.txt", 'w') as zanroviFajl:
             for i in zanrovi:
                 for j in i:
                     zanroviFajl.write(str(j + ";"))
@@ -424,7 +440,7 @@ def azurirajFilmove():
 def azuriraj():
     listaProjekcija = []
 
-    with open("data/projekcije.txt", 'r') as projekcijeFajl:
+    with open("./data/projekcije.txt", 'r') as projekcijeFajl:
 
         prvaLinija = True
 
@@ -445,7 +461,7 @@ def azuriraj():
 
 
 def saveProjekcije(projekcije):
-    with open("data/projekcije.txt", 'w') as projekcijeWrite:
+    with open("./data/projekcije.txt", 'w') as projekcijeWrite:
         projekcijeWrite.write("id;datum;vrijemePocetka;duzina;cijena;film;sala;slobodnoMjesta;ukupnoMjesta")
         for i in projekcije:
             projekcijeWrite.write("\n")
@@ -467,8 +483,9 @@ def brisanjeProjekcija():
         print(
             str(counter) + " - ID: " + j["id"] + ", Film: " + j["film"] + "\n   Datum: " + j["datum"] + " - " + j[
                 "vrijemePocetka"] + "   Duzina: " + j[
-                "duzina"] + "   Cijena: " + j["cijena"] + "   Sala: " + j["sala"] + "   Slobodno mjesta: " +
-            j["slobodnoMjesta"])
+                "duzina"] + " min   Cijena: " + j["cijena"] + " RSD   Sala: " + j["sala"] + "   Slobodno mjesta: " +
+            j["slobodnoMjesta"] + "   Ukupno mjesta: " +
+            j["ukupnoMjesta"])
 
 
     print("")

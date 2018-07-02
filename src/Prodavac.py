@@ -1,6 +1,6 @@
-import src.Menadzer as Menadzer
-import src.ProdavacPrikaz as ProdavacPrikaz
-import src.Login as Login
+import Menadzer
+import ProdavacPrikaz
+import Login
 import datetime
 import uuid
 

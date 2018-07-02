@@ -2,14 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e7bb8e0c-3120-4857-8903-f8dd4001912e" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/Cinema console app .iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Cinema console app .iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/korisnici.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/korisnici.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/projekcije.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/projekcije.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/racuni.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/racuni.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Login.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Login.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Menadzer.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Menadzer.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MenadzerPrikaz.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/MenadzerPrikaz.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Podaci.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Podaci.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Pretraga.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pretraga.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PretragaPrikaz.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/PretragaPrikaz.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Prodavac.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Prodavac.py" afterDir="false" />
@@ -27,9 +30,10 @@
       <file leaf-file-name="Prodavac.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Prodavac.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="670">
+              <caret line="37" column="27" selection-start-line="37" selection-start-column="27" selection-end-line="37" selection-end-column="27" />
               <folding>
-                <element signature="e#1#32#0" expanded="true" />
+                <element signature="e#0#15#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -38,46 +42,40 @@
       <file leaf-file-name="Main.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+            <state relative-caret-position="210">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Login.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Login.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-678">
+              <caret line="7" column="15" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
+              <folding>
+                <element signature="e#0#43#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="racuni.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data/racuni.txt">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="735">
+              <caret line="35" column="30" selection-start-line="35" selection-start-column="30" selection-end-line="35" selection-end-column="30" />
+            </state>
+          </provider>
         </entry>
       </file>
-      <file leaf-file-name="Pretraga.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Pretraga.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Pretraga.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-452">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            <state relative-caret-position="1113">
+              <caret line="52" column="15" selection-start-line="52" selection-start-column="15" selection-end-line="52" selection-end-column="15" />
               <folding>
                 <element signature="e#0#27#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PretragaPrikaz.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/PretragaPrikaz.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="e#91#107#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProdavacPrikaz.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ProdavacPrikaz.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="e#88#131#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -86,20 +84,8 @@
       <file leaf-file-name="Podaci.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Podaci.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="14" column="34" lean-forward="true" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MenadzerPrikaz.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/MenadzerPrikaz.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="582">
-              <caret line="33" column="35" lean-forward="true" selection-start-line="33" selection-start-column="35" selection-end-line="33" selection-end-column="35" />
-              <folding>
-                <element signature="e#0#43#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="903">
+              <caret line="43" column="15" selection-start-line="43" selection-start-column="15" selection-end-line="43" selection-end-column="15" />
             </state>
           </provider>
         </entry>
@@ -107,8 +93,8 @@
       <file leaf-file-name="Menadzer.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Menadzer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="416">
-              <caret line="467" column="16" selection-start-line="467" selection-start-column="16" selection-end-line="467" selection-end-column="16" />
+            <state relative-caret-position="237">
+              <caret line="194" column="26" selection-start-line="194" selection-start-column="26" selection-end-line="194" selection-end-column="26" />
               <folding>
                 <element signature="e#0#27#0" expanded="true" />
               </folding>
@@ -116,11 +102,29 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="projekcije.txt" pinned="false" current-in-tab="false">
+      <file leaf-file-name="projekcije.txt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/data/projekcije.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="14" column="53" selection-start-line="14" selection-start-column="53" selection-end-line="14" selection-end-column="53" />
+            <state relative-caret-position="273">
+              <caret line="13" column="63" selection-start-line="13" selection-start-column="63" selection-end-line="13" selection-end-column="63" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="korisnici.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/korisnici.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="84">
+              <caret line="4" column="27" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="filmovi.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/filmovi.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="252">
+              <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -165,24 +169,25 @@
         <option value="$PROJECT_DIR$/src/Views.py" />
         <option value="$PROJECT_DIR$/src/PregragaPrikaz.py" />
         <option value="$PROJECT_DIR$/data/zanrovi.txt" />
-        <option value="$PROJECT_DIR$/data/filmovi.txt" />
-        <option value="$PROJECT_DIR$/data/korisnici.txt" />
         <option value="$PROJECT_DIR$/projekcije.txt" />
-        <option value="$PROJECT_DIR$/data/racuni.txt" />
-        <option value="$PROJECT_DIR$/src/MenadzerPrikaz.py" />
-        <option value="$PROJECT_DIR$/src/Prodavac.py" />
         <option value="$PROJECT_DIR$/src/Main.py" />
-        <option value="$PROJECT_DIR$/src/Login.py" />
-        <option value="$PROJECT_DIR$/src/PretragaPrikaz.py" />
         <option value="$PROJECT_DIR$/src/ProdavacPrikaz.py" />
-        <option value="$PROJECT_DIR$/src/Podaci.py" />
+        <option value="$PROJECT_DIR$/src/MenadzerPrikaz.py" />
+        <option value="$PROJECT_DIR$/data/korisnici.txt" />
         <option value="$PROJECT_DIR$/src/Pretraga.py" />
-        <option value="$PROJECT_DIR$/data/projekcije.txt" />
+        <option value="$PROJECT_DIR$/src/PretragaPrikaz.py" />
+        <option value="$PROJECT_DIR$/src/Podaci.py" />
+        <option value="$PROJECT_DIR$/src/Login.py" />
         <option value="$PROJECT_DIR$/src/Menadzer.py" />
+        <option value="$PROJECT_DIR$/data/filmovi.txt" />
+        <option value="$PROJECT_DIR$/src/Prodavac.py" />
+        <option value="$PROJECT_DIR$/data/racuni.txt" />
+        <option value="$PROJECT_DIR$/data/projekcije.txt" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
+    <option name="x" value="1" />
     <option name="y" value="22" />
     <option name="width" value="1920" />
     <option name="height" value="1125" />
@@ -195,6 +200,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -216,7 +222,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -241,6 +246,24 @@
     </option>
   </component>
   <component name="RunManager" selected="Python.Main">
+    <configuration name="Login" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Cinema console app " />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/Login.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <configuration name="Main" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Cinema console app " />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -295,7 +318,7 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="Podaci" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Pretraga" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Cinema console app " />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -303,29 +326,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/Podaci.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="Views" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Cinema console app " />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/Views.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/Pretraga.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -334,17 +339,17 @@
     <list>
       <item itemvalue="Python.Main" />
       <item itemvalue="Python.Menadzer" />
-      <item itemvalue="Python.Podaci" />
-      <item itemvalue="Python.Views" />
       <item itemvalue="Python.MenadzerPrikaz" />
+      <item itemvalue="Python.Login" />
+      <item itemvalue="Python.Pretraga" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.Main" />
         <item itemvalue="Python.Menadzer" />
+        <item itemvalue="Python.Login" />
+        <item itemvalue="Python.Pretraga" />
         <item itemvalue="Python.MenadzerPrikaz" />
-        <item itemvalue="Python.Views" />
-        <item itemvalue="Python.Podaci" />
       </list>
     </recent_temporary>
   </component>
@@ -436,7 +441,14 @@
       <option name="project" value="LOCAL" />
       <updated>1530403626786</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="&quot;import greske ispravljene&quot;">
+      <created>1530562082670</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1530562082670</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TodoView">
@@ -449,19 +461,19 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1920" height="1125" extended-state="0" />
+    <frame x="1" y="22" width="1920" height="1125" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1544196" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16080937" />
       <window_info anchor="bottom" id="TODO" order="5" weight="0.3286004" />
       <window_info anchor="bottom" id="Event Log" order="6" side_tool="true" />
-      <window_info active="true" anchor="right" x="1920" y="85" width="960" height="1036" id="Run" order="3" type="WINDOWED" visible="true" weight="0.32916668" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.328585" />
       <window_info anchor="bottom" id="Python Console" order="8" weight="0.32150102" />
+      <window_info anchor="right" x="1920" y="85" width="960" height="1036" id="Run" order="3" type="WINDOWED" visible="true" weight="0.32916668" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32917964" />
-      <window_info anchor="bottom" id="Debug" order="2" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="2" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -494,16 +506,14 @@
     <MESSAGE value="brisanje projekcija gotovo" />
     <MESSAGE value="finished" />
     <MESSAGE value="Dodano vrijeme kada je izdat racun i jedinstveni broj racuna" />
-    <option name="LAST_COMMIT_MESSAGE" value="Dodano vrijeme kada je izdat racun i jedinstveni broj racuna" />
+    <MESSAGE value="&quot;import greske ispravljene&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;import greske ispravljene&quot;" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/ProdavacPrikaz.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
           <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
-          <folding>
-            <element signature="e#88#131#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -511,9 +521,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1344">
           <caret line="65" selection-start-line="65" selection-end-line="65" />
-          <folding>
-            <element signature="e#1#44#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -580,9 +587,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
           <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
-          <folding>
-            <element signature="e#88#131#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -618,9 +622,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1344">
           <caret line="65" selection-start-line="65" selection-end-line="65" />
-          <folding>
-            <element signature="e#1#44#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -641,9 +642,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
           <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
-          <folding>
-            <element signature="e#88#131#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -651,9 +649,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1344">
           <caret line="65" lean-forward="true" selection-start-line="65" selection-end-line="65" />
-          <folding>
-            <element signature="e#1#44#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -706,9 +701,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1176">
           <caret line="56" column="29" lean-forward="true" selection-start-line="56" selection-start-column="29" selection-end-line="56" selection-end-column="29" />
-          <folding>
-            <element signature="e#1#44#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -716,43 +708,17 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Login.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#1#44#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Login.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#1#44#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Views.py" />
     <entry file="file://$PROJECT_DIR$/src/PregragaPrikaz.py" />
     <entry file="file://$PROJECT_DIR$/projekcije.txt" />
-    <entry file="file://$PROJECT_DIR$/data/filmovi.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/korisnici.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/zanrovi.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -760,93 +726,109 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Login.py">
+    <entry file="file://$PROJECT_DIR$/src/MenadzerPrikaz.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#1#44#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/PretragaPrikaz.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#91#107#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Prodavac.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#1#32#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="21">
+          <caret line="1" column="7" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ProdavacPrikaz.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
+          <caret column="7" selection-start-column="7" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PretragaPrikaz.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="882">
+          <caret line="42" column="16" selection-start-line="42" selection-start-column="16" selection-end-line="42" selection-end-column="16" />
           <folding>
-            <element signature="e#88#131#0" expanded="true" />
+            <element signature="e#0#16#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MenadzerPrikaz.py">
+    <entry file="file://$PROJECT_DIR$/src/Pretraga.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="582">
-          <caret line="33" column="35" lean-forward="true" selection-start-line="33" selection-start-column="35" selection-end-line="33" selection-end-column="35" />
+        <state relative-caret-position="1113">
+          <caret line="52" column="15" selection-start-line="52" selection-start-column="15" selection-end-line="52" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Login.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-678">
+          <caret line="7" column="15" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
           <folding>
             <element signature="e#0#43#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/korisnici.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="27" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Menadzer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="194" column="26" selection-start-line="194" selection-start-column="26" selection-end-line="194" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Podaci.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="14" column="34" lean-forward="true" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
+        <state relative-caret-position="903">
+          <caret line="43" column="15" selection-start-line="43" selection-start-column="15" selection-end-line="43" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Prodavac.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="670">
+          <caret line="37" column="27" selection-start-line="37" selection-start-column="27" selection-end-line="37" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/data/racuni.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Menadzer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="467" column="16" selection-start-line="467" selection-start-column="16" selection-end-line="467" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#27#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="735">
+          <caret line="35" column="30" selection-start-line="35" selection-start-column="30" selection-end-line="35" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/filmovi.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/data/projekcije.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="14" column="53" selection-start-line="14" selection-start-column="53" selection-end-line="14" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Pretraga.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-452">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-          <folding>
-            <element signature="e#0#27#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="273">
+          <caret line="13" column="63" selection-start-line="13" selection-start-column="63" selection-end-line="13" selection-end-column="63" />
         </state>
       </provider>
     </entry>

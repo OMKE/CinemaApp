@@ -23,3 +23,14 @@ Prodavac: Joe Doe
 Datum: 2018-07-02 21:59:53.590464
 Sifra racuna: 7c6f2b80
 ------------------------------
+------------------------------
+            Racun  
+Projekcija Solo: a Star Wars Story
+    - Datum: 29.07.2018
+    - Vrijeme pocetka: 19:00
+    - Sala: 4A
+Broj karata: 5
+Iznos: 1800 RSD
+Datum: 2018-07-02 23:27:58.583802
+Sifra racuna: ca88d9c2
+------------------------------

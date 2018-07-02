@@ -1,5 +1,5 @@
-import src.Login
-import src.Pretraga as Pretraga
+import Login
+import Pretraga as Pretraga
 
 
 def pretragaPrikaz():
@@ -40,7 +40,7 @@ def pretragaNavigacija():
                 print("Unesite redni broj sale: ")
                 Pretraga.pretragaPoSali()
             elif unosBroja == 5:
-                src.Login.redirect()
+                Login.redirect()
             else:
                 print("Unesite jedan od ponudjenih brojeva")
                 netacanUnos = True

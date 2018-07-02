@@ -2,3 +2,5 @@ korisnickoIme;lozinka;ime;prezime;uloga
 omar;1234;Omar;Iriskic;menadzer
 joe;doe;Joe;Doe;prodavac
 jasmin;124;Jasmin;Iriskic;prodavac;
+jane;moe;Jane;Moe;prodavac;
+joe;doe;joe;doe;prodavac;

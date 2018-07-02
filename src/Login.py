@@ -1,5 +1,5 @@
-import src.MenadzerPrikaz as MenadzerPrikaz
-import src.ProdavacPrikaz as ProdavacPrikaz
+import MenadzerPrikaz as MenadzerPrikaz
+import ProdavacPrikaz as ProdavacPrikaz
 
 ulogovaniKorisnik = []
 

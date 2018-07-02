@@ -1,6 +1,6 @@
-import src.Podaci as Podaci
-import src.Login as Login
-import src.Menadzer as Menadzer
+import Podaci as Podaci
+import Login as Login
+import Menadzer as Menadzer
 
 
 def pretragaPoID():
@@ -50,7 +50,7 @@ def pretragaPoNazivu():
 
 def dodavanjeZanrova():
     zanrovi = []
-    with open("data/zanrovi.txt", 'r') as zanroviFajl:
+    with open("./data/zanrovi.txt", 'r') as zanroviFajl:
         for line in zanroviFajl:
             line = line.strip()
             zanroviLista = line.split(";")
