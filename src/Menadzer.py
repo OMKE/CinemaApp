@@ -245,7 +245,7 @@ def unosProjekcije():
 
 
 def kreiranjeProjekcije(projekcija):
-    with open("./data/projekcije.txt", "a") as projekcije:
+    with open("data/projekcije.txt", "a") as projekcije:
         projekcije.write("\n")
         for i in projekcija:
             projekcije.write(str(i) + ";")
@@ -263,7 +263,7 @@ def provjeraDuplikata(datum, vrijeme, sala):
 
 
 def kreiranjeFilma(film):
-    with open("./data/filmovi.txt", 'a') as pisanjeFilmovi:
+    with open("data/filmovi.txt", 'a') as pisanjeFilmovi:
         pisanjeFilmovi.write("\n")
         for i in film:
 
@@ -283,7 +283,7 @@ def dodavanjeProdavca():
 
     korisnik = [unosKorisnickogImena, unosLozinke, unosImena, unosPrezime, uloga]
 
-    with open("./data/korisnici.txt", "a") as korisnici:
+    with open("data/korisnici.txt", "a") as korisnici:
         korisnici.write("\n")
         for i in korisnik:
             korisnici.write(str(i) + ";")
@@ -405,7 +405,7 @@ def izmjenaProjekcije():
 def azurirajFilmove():
     zanrovi = Podaci.zanrovi
     listaFilmova = []
-    with open("./data/filmovi.txt", 'r') as filmoviFajl:
+    with open("data/filmovi.txt", 'r') as filmoviFajl:
 
         prvaLinija = True
 
@@ -430,7 +430,7 @@ def azurirajFilmove():
                     zanrovi.append(zanr)
                 listaFilmova.append(film)
 
-        with open("./data/zanrovi.txt", 'w') as zanroviFajl:
+        with open("data/zanrovi.txt", 'w') as zanroviFajl:
             for i in zanrovi:
                 for j in i:
                     zanroviFajl.write(str(j + ";"))
@@ -440,7 +440,7 @@ def azurirajFilmove():
 def azuriraj():
     listaProjekcija = []
 
-    with open("./data/projekcije.txt", 'r') as projekcijeFajl:
+    with open("data/projekcije.txt", 'r') as projekcijeFajl:
 
         prvaLinija = True
 
@@ -461,7 +461,7 @@ def azuriraj():
 
 
 def saveProjekcije(projekcije):
-    with open("./data/projekcije.txt", 'w') as projekcijeWrite:
+    with open("data/projekcije.txt", 'w') as projekcijeWrite:
         projekcijeWrite.write("id;datum;vrijemePocetka;duzina;cijena;film;sala;slobodnoMjesta;ukupnoMjesta")
         for i in projekcije:
             projekcijeWrite.write("\n")
