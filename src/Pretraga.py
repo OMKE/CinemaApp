@@ -50,7 +50,7 @@ def pretragaPoNazivu():
 
 def dodavanjeZanrova():
     zanrovi = []
-    with open("./data/zanrovi.txt", 'r') as zanroviFajl:
+    with open("data/zanrovi.txt", 'r') as zanroviFajl:
         for line in zanroviFajl:
             line = line.strip()
             zanroviLista = line.split(";")
