@@ -66,7 +66,7 @@ def loginProvjera():
 
 
 def redirect():
-    if meni() == True:
+    if meni():
         MenadzerPrikaz.menadzerPrikaz()
         MenadzerPrikaz.menadzerNavigacija()
     else:

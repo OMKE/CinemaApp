@@ -125,8 +125,15 @@ def unosProjekcije():
             print("Datum nije validan, pokusajte ponovo")
 
 
-    unosVremena1 = input("Unesite vrijeme projekcije u formatu (hh-mm): ")
-    unosVremena = prepraviVrijeme(unosVremena1)
+    while True:
+        try:
+            unosVremena1 = input("Unesite vrijeme projekcije u formatu (hh-mm): ")
+            unosVremena = prepraviVrijeme(unosVremena1)
+            datetime.datetime.strptime((unosVremena), "%H-%M")
+            break
+        except ValueError:
+            print("Vrijeme nije validno, pokusajte ponovo")
+
 
     print("Unesite ID filma. Ako zelite da kreirate novi, unesite: 'da'")
     print("")
@@ -413,8 +420,14 @@ def izmjenaProjekcije():
                         break
                     except ValueError:
                         print("Datum nije validan, pokusajte ponovo")
-                unosVremena1 = input("Unesite vrijeme projekcije u formatu (hh-mm): ")
-                unosVremena = prepraviVrijeme(unosVremena1)
+                while True:
+                    try:
+                        unosVremena1 = input("Unesite vrijeme projekcije u formatu (hh-mm): ")
+                        unosVremena = prepraviVrijeme(unosVremena1)
+                        datetime.datetime.strptime((unosVremena), "%H-%M")
+                        break
+                    except ValueError:
+                        print("Vrijeme nije validno, pokusajte ponovo")
                 while True:
                     try:
                         unosDuzine = int(input("Unesite duzinu projekcije u minutama: "))

@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e7bb8e0c-3120-4857-8903-f8dd4001912e" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/projekcije.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/projekcije.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Menadzer.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Menadzer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pretraga.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pretraga.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Login.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Login.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -31,8 +29,8 @@
       <file leaf-file-name="Main.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+            <state relative-caret-position="399">
+              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
             </state>
           </provider>
         </entry>
@@ -58,6 +56,18 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="PretragaPrikaz.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/PretragaPrikaz.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="21">
+              <caret line="1" column="15" selection-start-line="1" selection-start-column="15" selection-end-line="1" selection-end-column="15" />
+              <folding>
+                <element signature="e#0#12#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Podaci.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Podaci.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -67,11 +77,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Menadzer.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Menadzer.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Menadzer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3">
-              <caret line="16" column="56" lean-forward="true" selection-start-line="16" selection-start-column="56" selection-end-line="16" selection-end-column="56" />
+            <state relative-caret-position="2744">
+              <caret line="603" column="50" lean-forward="true" selection-start-line="603" selection-start-column="50" selection-end-line="603" selection-end-column="50" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
               </folding>
@@ -79,11 +89,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Login.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Login.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Login.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-60">
-              <caret line="7" column="15" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
+            <state relative-caret-position="1428">
+              <caret line="68" column="13" lean-forward="true" selection-start-line="68" selection-start-column="13" selection-end-line="68" selection-end-column="13" />
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
               </folding>
@@ -158,12 +168,13 @@
         <option value="$PROJECT_DIR$/src/PretragaPrikaz.py" />
         <option value="$PROJECT_DIR$/src/ProdavacPrikaz.py" />
         <option value="$PROJECT_DIR$/data/racuni.txt" />
-        <option value="$PROJECT_DIR$/src/Login.py" />
         <option value="$PROJECT_DIR$/src/Pretraga.py" />
         <option value="$PROJECT_DIR$/src/Podaci.py" />
         <option value="$PROJECT_DIR$/src/Datum.py" />
         <option value="$PROJECT_DIR$/data/projekcije.txt" />
         <option value="$PROJECT_DIR$/src/Menadzer.py" />
+        <option value="$PROJECT_DIR$/__init__.py" />
+        <option value="$PROJECT_DIR$/src/Login.py" />
       </list>
     </option>
   </component>
@@ -209,6 +220,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/data" />
     </key>
@@ -239,6 +251,24 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/Datum.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="Login" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Cinema console app " />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/Login.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -280,24 +310,6 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="Pretraga" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Cinema console app " />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/Pretraga.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
     <configuration name="ProdavacPrikaz" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Cinema console app " />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -319,17 +331,17 @@
     <list>
       <item itemvalue="Python.Main" />
       <item itemvalue="Python.Menadzer" />
-      <item itemvalue="Python.Pretraga" />
       <item itemvalue="Python.ProdavacPrikaz" />
       <item itemvalue="Python.Datum" />
+      <item itemvalue="Python.Login" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.Main" />
-        <item itemvalue="Python.Datum" />
+        <item itemvalue="Python.Login" />
         <item itemvalue="Python.Menadzer" />
+        <item itemvalue="Python.Datum" />
         <item itemvalue="Python.ProdavacPrikaz" />
-        <item itemvalue="Python.Pretraga" />
       </list>
     </recent_temporary>
   </component>
@@ -449,7 +461,14 @@
       <option name="project" value="LOCAL" />
       <updated>1530569053414</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Preklapanje projekcija rijeseno">
+      <created>1530823374202</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1530823374203</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TodoView">
@@ -465,10 +484,10 @@
     <frame x="0" y="22" width="1920" height="1125" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16240682" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16240682" />
       <window_info anchor="bottom" id="TODO" order="5" weight="0.3286004" />
       <window_info anchor="bottom" id="Event Log" order="6" side_tool="true" />
-      <window_info active="true" anchor="right" x="1920" y="85" width="960" height="1036" id="Run" order="3" type="WINDOWED" visible="true" weight="0.32916668" />
+      <window_info anchor="right" x="1920" y="85" width="960" height="1036" id="Run" order="3" type="WINDOWED" weight="0.32916668" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.328585" />
       <window_info anchor="bottom" id="Python Console" order="8" weight="0.32150102" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -510,16 +529,10 @@
     <MESSAGE value="import errors fixed" />
     <MESSAGE value="//" />
     <MESSAGE value="import fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="import fixed" />
+    <MESSAGE value="Preklapanje projekcija rijeseno" />
+    <option name="LAST_COMMIT_MESSAGE" value="Preklapanje projekcija rijeseno" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Login.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1344">
-          <caret line="65" selection-start-line="65" selection-end-line="65" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/MenadzerPrikaz.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
@@ -736,16 +749,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/PretragaPrikaz.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="1" column="15" selection-start-line="1" selection-start-column="15" selection-end-line="1" selection-end-column="15" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ProdavacPrikaz.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="462">
@@ -770,16 +773,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Login.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-60">
-          <caret line="7" column="15" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Prodavac.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="717">
@@ -797,13 +790,6 @@
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
         </state>
       </provider>
     </entry>
@@ -831,12 +817,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PretragaPrikaz.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="1" column="15" selection-start-line="1" selection-start-column="15" selection-end-line="1" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Menadzer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3">
-          <caret line="16" column="56" lean-forward="true" selection-start-line="16" selection-start-column="56" selection-end-line="16" selection-end-column="56" />
+        <state relative-caret-position="2744">
+          <caret line="603" column="50" lean-forward="true" selection-start-line="603" selection-start-column="50" selection-end-line="603" selection-end-column="50" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Login.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1428">
+          <caret line="68" column="13" lean-forward="true" selection-start-line="68" selection-start-column="13" selection-end-line="68" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
           </folding>
         </state>
       </provider>
