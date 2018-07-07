@@ -1,25 +1,55 @@
+------------------------------
+      Racun            
+Projekcija: Incredibles 2
+    - Datum: 01-07-2018
+    - Vrijeme pocetka: 19-00
+    - Sala: 3B
+Broj karata: 3
+------------------------------
+      Racun            
+Projekcija: Tomb Raider
+    - Datum: 01-07-2018
+    - Vrijeme pocetka: 20-00
+    - Sala: 2B
+Broj karata: 5
+
+Iznos: 3050 RSD
+Prodavac: Joe Doe
+Datum: 2018-07-07 19:02:41.839424
+Sifra racuna: 8f7b2668
+------------------------------
 
 ------------------------------
-            Racun  
-Projekcija Avengers: Infinity War
-    - Datum: 01.07.2018
-    - Vrijeme pocetka: 16:00
-    - Sala: 5A
+      Racun            
+Projekcija: Tomb Raider
+    - Datum: 01-07-2018
+    - Vrijeme pocetka: 20-00
+    - Sala: 2B
+Broj karata: 2
+
+Iznos: 800 RSD
+Prodavac: Jasmin Iriskic
+Datum: 2018-07-07 19:03:52.908468
+Sifra racuna: b9d76cde
+------------------------------
+
+------------------------------
+      Racun            
+Projekcija: Tomb Raider
+    - Datum: 01-07-2018
+    - Vrijeme pocetka: 20-00
+    - Sala: 2B
 Broj karata: 3
-Iznos: 1050 RSD
-Prodavac: Joe Doe
-Datum: 2018-07-01 00:26:15.747695
-Sifra racuna: 9a2e3ac8
 ------------------------------
-------------------------------
-            Racun  
-Projekcija Jurassic World: Falled Kingdom
-    - Datum: 25.05.2018
-    - Vrijeme pocetka: 16:00
-    - Sala: 4A
-Broj karata: 5
-Iznos: 1750 RSD
-Prodavac: Joe Doe
-Datum: 2018-07-02 21:59:53.590464
-Sifra racuna: 7c6f2b80
+      Racun            
+Projekcija: Avengers: Infinity War
+    - Datum: 01-07-2018
+    - Vrijeme pocetka: 16-00
+    - Sala: 5A
+Broj karata: 6
+
+Iznos: 3300 RSD
+Prodavac: Jane Moe
+Datum: 2018-07-07 19:04:23.459671
+Sifra racuna: cc0d2b64
 ------------------------------

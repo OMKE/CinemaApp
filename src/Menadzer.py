@@ -57,7 +57,8 @@ def provjeriDatum(datumProjekcije, sala, vrijeme, duzina):
                 break
             else:
                 nijeZauzeto = False
-
+    if len(datum) == 0:
+        nijeZauzeto = True
 
     return nijeZauzeto
 
