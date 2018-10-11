@@ -1,2 +1,2 @@
 # Cinema
-Python3 console app for school project
+Python CLI app for school project
